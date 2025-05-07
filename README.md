@@ -52,3 +52,16 @@ POST https://notifications.yourdomain.com/notifications/rest/notifications
   "senderEmail": "noreply@uniquex.com",
   "type": "EVENT_CREATED"
 }
+```
+
+# Deploy  & testing 
+
+**take aws sso**
+- list all vault  hou have 
+```
+aws-vault list
+```
+- take the session for as per your  required hour 
+```
+aws-vault exec AdministratorAccess-084828565305 duration=8hour
+```
